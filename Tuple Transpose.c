@@ -185,12 +185,6 @@ int main()
     printf("matrix 2\n");
     transpose(mat2, trans, d);
     display(trans, d);
-
-    printf("The sum matrix is\n");
-   
-    v = add(mat1, mat2, res, k, d);
-  res[0].value=mat1[0].value+mat2[0].value;
-    display(res, v);
-
     return 0;
 }
+
