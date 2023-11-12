@@ -73,3 +73,44 @@ int main()
 
     return 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+// Structure to represent a polynomial
+
+// Function to initialize a polynomial
+
+// Function to input coefficients of a polynomial
+
+// Function to display a polynomial
+
+// Function to subtract two polynomials
+
+// Function to free memory allocated for coefficients
+
+    // Input degree of the first polynomial
+
+    // Initialize and input the first polynomial
+
+    // Input degree of the second polynomial
+
+    // Initialize and input the second polynomial
+
+    // Display the input polynomials
+
+    // Subtract the polynomials
+
+    // Display the result
+
+    // Free memory allocated for coefficients
+ 
+
