@@ -1,0 +1,35 @@
+Certainly! Here's an algorithm that corresponds to the provided C program for polynomial addition:
+
+1. **Define the Polynomial structure:**
+   - Create a structure called `Polynomial` with members `degree` and `coefficients` (an array to store coefficients).
+
+2. **Initialize a Polynomial:**
+   - Create a function `initializePolynomial` that takes a Polynomial pointer (`struct Polynomial* poly`) and a degree.
+   - Allocate memory for the coefficients array based on the degree.
+   - Initialize all coefficients to 0.
+
+3. **Input Polynomial coefficients:**
+   - Create a function `inputPolynomial` that takes a Polynomial pointer (`struct Polynomial* poly`).
+   - Use a loop to input coefficients from the user, starting from the highest degree to the constant term.
+
+4. **Display Polynomial:**
+   - Create a function `displayPolynomial` that takes a Polynomial (`struct Polynomial poly`) and prints it in the form of a polynomial.
+
+5. **Add Polynomials:**
+   - Create a function `addPolynomials` that takes two Polynomials (`struct Polynomial poly1` and `struct Polynomial poly2`).
+   - Determine the maximum degree among the two polynomials.
+   - Initialize a new Polynomial `result` with the maximum degree.
+   - Iterate through each term, add corresponding coefficients, and store the result in the `result` Polynomial.
+
+6. **Main Function:**
+   - In the `main` function:
+     - Initialize three Polynomials: `poly1`, `poly2`, and `result`.
+     - Input coefficients for `poly1` and `poly2`.
+     - Display `poly1` and `poly2`.
+     - Call `addPolynomials` to compute the sum and store it in `result`.
+     - Display the result.
+
+7. **Free Memory:**
+   - Free the memory allocated for the coefficients array in each Polynomial after they are no longer needed.
+
+This algorithm outlines the steps to create a C program that performs polynomial addition using a structure to represent polynomials and dynamic memory allocation for coefficients.
