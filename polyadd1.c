@@ -88,33 +88,11 @@ int main() {
 
 
 
-// Structure to represent a polynomial
 
-// Function to initialize a polynomial
+Create a structure to represent a term in a polynomial. Each term should store the coefficient and the exponent.
 
-    // Initialize coefficients to zero
-
-// Function to input coefficients of a polynomial
-
-
-// Function to display a polynomial
-
-// Function to add two polynomials
-
-    // Input degree of the first polynomial
-
-    // Initialize and input the first polynomial
-
-    // Input degree of the second polynomial
-
-    // Initialize and input the second polynomial
-
-    // Display the input polynomials
-
-    // Add the polynomials
-
-    // Display the result
-
-    // Free memory allocated for coefficients
-    
-
+Create a function to input a polynomial. This function should take an array of terms and the number of terms as parameters, and it should fill in the coefficient and exponent for each term.
+Create a function to sort the terms of a polynomial in descending order based on their exponents
+Create a function to add two polynomials. This function should take the arrays of terms for the two polynomials and their respective sizes as parameters. It should compute the sum and store it in a result array.
+Create a function to display a polynomial. This function should take an array of terms and its size as parameters and print the polynomial.
+In the main function, create arrays of terms for the two polynomials and the result, input the polynomials, perform the addition, and display the result.
