@@ -2,25 +2,20 @@
 #include <stdbool.h>
 #include <string.h>
 #include <math.h>
-
 int stack[100];
 int top = -1;
-
 void stack_push(int el)
 {
     stack[++top] = el;
 }
-
 int stack_pop()
 {
     return stack[top--];
 }
-
 int stack_peek()
 {
     return stack[top];
 }
-
 bool isDigit(char c)
 {
     return (c >= '0' && c <= '9');
@@ -43,7 +38,6 @@ int performOperation(char operator, int op1, int op2)
         return -1;
     }
 }
-
 int postfixEval(char exp[])
 {
     int n = strlen(exp);
@@ -72,7 +66,6 @@ int postfixEval(char exp[])
     }
     return stack_peek(); 
 }
-
 int main()
 {
     char exp[100];
