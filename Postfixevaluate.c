@@ -4,15 +4,15 @@
 #include <math.h>
 int stack[100];
 int top = -1;
-void stack_push(int el)
+void push(int el)
 {
     stack[++top] = el;
 }
-int stack_pop()
+int pop()
 {
     return stack[top--];
 }
-int stack_peek()
+int display()
 {
     return stack[top];
 }
@@ -54,17 +54,17 @@ int postfixEval(char exp[])
                 i++;
             }
             i--;
-            stack_push(num); 
+            push(num); 
         }
         else 
         {
-            int op1 = stack_pop();
-            int op2 = stack_pop();
+            int op1 = pop();
+            int op2 = pop();
             int result = performOperation(exp[i], op1, op2);
-            stack_push(result);                             
+            push(result);                             
         }
     }
-    return stack_peek(); 
+    return display(); 
 }
 int main()
 {
